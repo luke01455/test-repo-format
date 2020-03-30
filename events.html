@@ -102,10 +102,29 @@
       // $("#box > ul").css("border", "2px solid blue")
 
       // $("p:contains('Lorem')").css("border", "1px solid red")
+      
       // $("p:last-of-type").css("border", "1px solid red")
 
       // $("p:nth-child(2)").css("border", "1px solid red")
 
+      // $("create_text").click(function(){
+
+      //   $("#container p:last").text("<p> Replaced this text </p>")
+      // }) 
+
+      // $("#create_variable").click(function(){
+
+      //   var newText = $('#container p:first')
+      //   $("#container p:last").html(newText)
+      // }) 
+
+      $("#append").click(function(){
+        $("#container p:first").append("I Just appended some content")
+      })
+
+      $("#prepend").click(function(){
+        $("#container p:first").prepend("I Just prepended some content")
+      })
     })
   </script>
 
@@ -128,16 +147,8 @@
 <body>
   <!-- <a href='#' id='show'> Click to show </a> | 
 <a href='#' id='hide'> Click to hide </a> -->
-<p>
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui ullam,
-  aliquam voluptas quas maxime iure facilis aut suscipit excepturi vitae, eligendi perspiciatis incidunt sunt odio
-  iste nostrum sint repudiandae?
-</p>
-<p>
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui ullam,
-  aliquam voluptas quas maxime iure facilis aut suscipit excepturi vitae, eligendi perspiciatis incidunt sunt odio
-  iste nostrum sint repudiandae?
-</p>
+<a id='append' href='#'> Append </a> | 
+<a id='prepend' href='#'> Prepend </a> 
   <div id='container'>
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui ullam,
@@ -154,46 +165,7 @@
       aliquam voluptas quas maxime iure facilis aut suscipit excepturi vitae, eligendi perspiciatis incidunt sunt odio
       iste nostrum sint repudiandae?
     </p>
-    <p class='fourth-para'>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui ullam,
-      aliquam voluptas quas maxime iure facilis aut suscipit excepturi vitae, eligendi perspiciatis incidunt sunt odio
-      iste nostrum sint repudiandae?
-    </p>
   </div>
-
-
-  <div id='box'>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui ullam,
-      aliquam voluptas quas maxime iure facilis aut suscipit excepturi vitae, eligendi perspiciatis incidunt sunt odio
-      iste nostrum sint repudiandae?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui ullam,
-      aliquam voluptas quas maxime iure facilis aut suscipit excepturi vitae, eligendi perspiciatis incidunt sunt odio
-      iste nostrum sint repudiandae?
-    </p>
-    <p class='last'>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui ullam,
-      aliquam voluptas quas maxime iure facilis aut suscipit excepturi vitae, eligendi perspiciatis incidunt sunt odio
-      iste nostrum sint repudiandae?
-    </p>
-    <ul>
-      <li><a href='home'>5</a></li>
-      <li><a href='home'>6</a></li>
-      <li><a href='home'>7</a></li>
-      <li><a href='home'>8</a></li>
-    </ul>
-
-  </div>
-
-  <ul>
-    <li><a href='home'>1</a></li>
-    <li><a href='home'>2</a></li>
-    <li><a href='home'>3</a></li>
-    <li><a href='home'>4</a></li>
-  </ul>
-
 
 </body>
 
