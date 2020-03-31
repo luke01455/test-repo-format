@@ -118,13 +118,20 @@
       //   $("#container p:last").html(newText)
       // }) 
 
-      $("#append").click(function(){
-        $("#container p:first").append("I Just appended some content")
-      })
+      // $("#append").click(function(){
+      //   $("#container p:first").append("I Just appended some content")
+      // })
 
-      $("#prepend").click(function(){
-        $("#container p:first").prepend("I Just prepended some content")
-      })
+      // $("#prepend").click(function(){
+      //   $("#container p:first").prepend("I Just prepended some content")
+      // })
+
+      // $("#container p:first").wrap("<div class='colorBox'>")
+      // $("#container p:first").empty()
+
+      // replaces all of the #container with <div>Container<div>
+      // $("<div>Container<div>").replaceAll("#container") 
+        $("#container").replaceWith("<div>this is the replacement<div>") 
     })
   </script>
 
@@ -141,6 +148,10 @@
       .highlight {
         background: red;
       } */
+
+    .colorBox{
+      color: blue;
+    }
   </style>
 </head>
 
