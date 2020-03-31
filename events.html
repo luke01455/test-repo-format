@@ -131,7 +131,21 @@
 
       // replaces all of the #container with <div>Container<div>
       // $("<div>Container<div>").replaceAll("#container") 
-        $("#container").replaceWith("<div>this is the replacement<div>") 
+      //  $("#container").replaceWith("<div>this is the replacement<div>") 
+
+      $("#add-class").click(function() {
+        $("p:first").addClass("color")
+      })
+      $("#remove-class").click(function() {
+        $("p:first").removeClass("color")
+      })
+      $("#toggle-class").click(function() {
+        $("p:first").toggleClass("color")
+      })
+      // increasing text size by 1 px per click using +-1px
+      $("#increase-class").click(function() {
+        $("p:first").css("font-size", "+=1px")
+      })
     })
   </script>
 
@@ -149,17 +163,20 @@
         background: red;
       } */
 
-    .colorBox{
+    .color{
       color: blue;
     }
+
   </style>
 </head>
 
 <body>
   <!-- <a href='#' id='show'> Click to show </a> | 
 <a href='#' id='hide'> Click to hide </a> -->
-<a id='append' href='#'> Append </a> | 
-<a id='prepend' href='#'> Prepend </a> 
+<a id='add-class' href='#'> add class </a> | 
+<a id='remove-class' href='#'> remove class </a> |
+<a id='toggle-class' href='#'> toggle class </a> |
+<a id='increase-class' href='#'> increase class </a> 
   <div id='container'>
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui ullam,
